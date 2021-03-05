@@ -22,17 +22,21 @@ Algumas informações úteis e dicas:
   - Sombra: https://codepen.io/sdthornton/pen/wBZdXq
  */
 
+* {
+  font-family: 'Roboto', sans-serif;
+}
 
 
 .appbar{
   left: 5%;
   top: 10%;
-  width: 100%;
+  width: auto;
   height: 100%;
   display: flex;
   align-items: center;
   box-shadow: 1px 1px 15px black;
   background-color: #f7d736;
+  margin-bottom: 1.5rem;
 }
 
 .logo{
@@ -45,40 +49,92 @@ html, body {
   font-family: "Roboto", sans-serif;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
 .form-card{
   box-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
   0 12.5px 10px rgba(0, 0, 0, 0.06),
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 50px 40px rgba(0, 0, 0, 0.12);
+  0 21.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 10px 5px rgba(0, 0, 0, 0.12);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction:column;
-  width: 30%;
-  margin: 1% auto;
+  width: 30rem;
   border-radius: 5px;
+  color: #2c2c2c;
+}
 
+.form-card-title{
+  border-style: None;
+  width: 100%;
+  margin: 0 1% 0 1%;
 }
 
 .card-container{
-  margin: 1% auto;
   display: flex;
-  border-radius: 2px;
-  border-color: black;
-  border-radius: 5px;
-  
-
+  flex-wrap: wrap: 
 }
 
 .card{
-  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  padding: 1%;
+  max-width: 300px;
+  min-width: 150px;
+  font-family: 'Permanent Marker', cursive;
+  border-radius: 0.5rem;
+  box-shadow:  0 1px 0.5px rgba(0, 0, 0, 0.034),
+  0 3px 2px rgba(0, 0, 0, 0.048),
+  0 6px 1px rgba(0, 0, 0, 0.06),
+  0 10px 5px rgba(0, 0, 0, 0.072),
+  0 10px 5px rgba(0, 0, 0, 0.12);
+  
+}
 
+.card-title{
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+
+}
+
+.card-content{
+  font-size: 0.75rem;
+  color: #4c4c4c;
+}
+
+.card-color-1{
+  background-color: #ead3a7;
+}
+
+.card-color-2{
+  background-color: #9de0f5;
+
+}
+
+.card-color-3{
+  background-color: #ef89ba;
+}
+
+.card-color-4{
+  background-color: #fae890;
+}
+
+.card-color-5{
+  background-color: #abe9c1;
 }
 
 /* Você pode usar o CSS comentado abaixo, se ajudar */
 /* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
- .btn {
+
+.btn {
   position: relative;
   display: block;
   padding: 10px 15px;
